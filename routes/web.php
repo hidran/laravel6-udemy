@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return ['Hello','world'];
 });
+Route::get('/{name?}/{lastname}', function ($name, $lastname) {
+    return '<h1>Hello World '.$name.' '.$lastname;
+});
